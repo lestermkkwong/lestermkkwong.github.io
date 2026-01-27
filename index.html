@@ -32,24 +32,48 @@
 </ul>
 
 <h2>Teaching</h2>
-<ul>
+
+<style>
+  .teaching-list {
+    display: grid;
+    /* Col 1: Course code, Col 2: Hyphen, Col 3: Title */
+    grid-template-columns: 100px 20px 1fr;
+    gap: 8px 0; /* 8px vertical gap between rows */
+    list-style: none;
+    padding-left: 0;
+  }
+
+  /* display: contents makes the <li> 'invisible' to the grid 
+     so the spans inside can align to the main columns */
+  .teaching-list li {
+    display: contents;
+  }
+
+  .course-code {
+    font-weight: bold;
+  }
+</style>
+
+<ul class="teaching-list">
   <li>
-    ECON 2P30 - Foundations of Economic Analysis
-   </li>
+    <span class="course-code">ECON 2P30</span>
+    <span>-</span>
+    <span>Foundations of Economic Analysis</span>
+  </li>
+  
   <li>
-    ECON 3Q91 - Mathematical Methods in Economics
-     </li>
+    <span class="course-code">ECON 3Q91</span>
+    <span>-</span>
+    <span>Mathematical Methods in Economics</span>
+  </li>
+  
   <li>
-    ECON 5P01 - Microeconomic Theory
+    <span class="course-code">ECON 5P01</span>
+    <span>-</span>
+    <span>Microeconomic Theory</span>
   </li>
 </ul>
 
-<h2>Curriculum Vitae</h2>
-<ul>
-  <li>
-    <!-- <a href="CV.pdf">Download CV</a> -->
-  </li>
-</ul>
 
 </body>
 </html>
